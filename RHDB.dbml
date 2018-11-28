@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RHDB" Class="RHDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\RHDB.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="Reatal_House_Management_System.Properties.Settings" SettingsPropertyName="RHDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Admin" Member="Admins">
+    <Type Name="Admin">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Mobile No]" Member="Mobile_No" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Keyword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Modified" Member="Modifieds">
+    <Type Name="Modified">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Mobile No]" Member="Mobile_No" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Keyword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Owner" Member="Owners">
+    <Type Name="Owner">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Mobile No]" Member="Mobile_No" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[House Address]" Member="House_Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Area" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Total Floor]" Member="Total_Floor" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Total Flat]" Member="Total_Flat" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Flat Rent]" Member="Flat_Rent" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Keyword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tenant" Member="Tenants">
+    <Type Name="Tenant">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Mobile No]" Member="Mobile_No" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Keyword" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OwnerTenant" Member="OwnerTenants">
+    <Type Name="OwnerTenant">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Mobile No]" Member="Mobile_No" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

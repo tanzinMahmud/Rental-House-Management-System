@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="RHDB">
+  <DataContextMoniker Name="/RHDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0750f228-f645-4279-aa96-372789ab19aa" absoluteBounds="3.25, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/RHDBDataContext/Admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8986fb64-29c2-4e6b-b377-8e39898ccd7c" absoluteBounds="3.2649999999999997, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab13c230-9d12-439b-a6aa-1868892bed6b" absoluteBounds="0.875, 0.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/RHDBDataContext/Modified" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74f31156-f5a5-4af0-b332-72599b3b84b6" absoluteBounds="0.89, 1.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c449633c-8ab4-4bf0-96b9-3044d8a59b7d" absoluteBounds="0.5, 2.375, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/RHDBDataContext/Owner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21cafdbc-00ee-4db9-ae9d-eddab7157dbe" absoluteBounds="0.51500000000000012, 2.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="12519e0f-993f-4284-926b-2ca1a557be52" absoluteBounds="4, 2.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/RHDBDataContext/Tenant" />
+      <nestedChildShapes>
+        <elementListCompartment Id="211f2c03-5e6b-4de9-906e-230fbd662c94" absoluteBounds="4.015, 2.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5de9ae87-9eb1-458a-9bbb-334c2a6ae76c" absoluteBounds="3.75, 4.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/RHDBDataContext/OwnerTenant" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aef5a802-5f71-43e8-a7c5-fa5a8a7b8eb4" absoluteBounds="3.7649999999999997, 5.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

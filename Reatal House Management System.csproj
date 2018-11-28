@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49FD329F-AD01-44FF-9F50-7DFA438BCBD0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Reatal_House_Management_System</RootNamespace>
+    <AssemblyName>Reatal House Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAdminForm.Designer.cs">
+      <DependentUpon>AddAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTenantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTenantForm.Designer.cs">
+      <DependentUpon>AddTenantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsHouseOwnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsHouseOwnerForm.Designer.cs">
+      <DependentUpon>AsHouseOwnerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsTenantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsTenantForm.Designer.cs">
+      <DependentUpon>AsTenantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvailableHouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvailableHouseForm.Designer.cs">
+      <DependentUpon>AvailableHouseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccountAfterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccountAfterForm.Designer.cs">
+      <DependentUpon>CreateAccountAfterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateNewAccountForm.Designer.cs">
+      <DependentUpon>CreateNewAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateNewAdminForm.Designer.cs">
+      <DependentUpon>CreateNewAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.Designer.cs">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HouseInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HouseInformationForm.Designer.cs">
+      <DependentUpon>HouseInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerUpdateForm.Designer.cs">
+      <DependentUpon>OwnerUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPasswordForm.Designer.cs">
+      <DependentUpon>ResetPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RHDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="SendCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendCodeForm.Designer.cs">
+      <DependentUpon>SendCodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowAdminForm.Designer.cs">
+      <DependentUpon>ShowAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowOwnersDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowOwnersDataForm.Designer.cs">
+      <DependentUpon>ShowOwnersDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowTenantsDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowTenantsDataForm.Designer.cs">
+      <DependentUpon>ShowTenantsDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignInFormForAmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignInFormForAmin.Designer.cs">
+      <DependentUpon>SignInFormForAmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignInFormForHouseOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignInFormForHouseOwner.Designer.cs">
+      <DependentUpon>SignInFormForHouseOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignInFormForTenant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignInFormForTenant.Designer.cs">
+      <DependentUpon>SignInFormForTenant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TenantUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TenantUpdate.Designer.cs">
+      <DependentUpon>TenantUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TenantUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TenantUpdateForm.Designer.cs">
+      <DependentUpon>TenantUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAdminForm.Designer.cs">
+      <DependentUpon>UpdateAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateHouseInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateHouseInformationForm.Designer.cs">
+      <DependentUpon>UpdateHouseInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateOwnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateOwnerForm.Designer.cs">
+      <DependentUpon>UpdateOwnerForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAdminForm.resx">
+      <DependentUpon>AddAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTenantForm.resx">
+      <DependentUpon>AddTenantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsHouseOwnerForm.resx">
+      <DependentUpon>AsHouseOwnerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsTenantForm.resx">
+      <DependentUpon>AsTenantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvailableHouseForm.resx">
+      <DependentUpon>AvailableHouseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccountAfterForm.resx">
+      <DependentUpon>CreateAccountAfterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateNewAccountForm.resx">
+      <DependentUpon>CreateNewAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateNewAdminForm.resx">
+      <DependentUpon>CreateNewAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordForm.resx">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HouseInformationForm.resx">
+      <DependentUpon>HouseInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerUpdateForm.resx">
+      <DependentUpon>OwnerUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ResetPasswordForm.resx">
+      <DependentUpon>ResetPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendCodeForm.resx">
+      <DependentUpon>SendCodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowAdminForm.resx">
+      <DependentUpon>ShowAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowOwnersDataForm.resx">
+      <DependentUpon>ShowOwnersDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowTenantsDataForm.resx">
+      <DependentUpon>ShowTenantsDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignInFormForAmin.resx">
+      <DependentUpon>SignInFormForAmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignInFormForHouseOwner.resx">
+      <DependentUpon>SignInFormForHouseOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignInFormForTenant.resx">
+      <DependentUpon>SignInFormForTenant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TenantUpdate.resx">
+      <DependentUpon>TenantUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TenantUpdateForm.resx">
+      <DependentUpon>TenantUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAdminForm.resx">
+      <DependentUpon>UpdateAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateHouseInformationForm.resx">
+      <DependentUpon>UpdateHouseInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateOwnerForm.resx">
+      <DependentUpon>UpdateOwnerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RHDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>RHDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RHDB.dbml.layout">
+      <DependentUpon>RHDB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsHouseOwner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsTenant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackButton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackButton2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdAdmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OwensData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TenantsData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HouseInformation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddTenant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SendSms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvailableHouse.png" />
+    <None Include="Resources\ShowAdminData.png" />
+    <None Include="Resources\Update.png" />
+    <Content Include="RHDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RHDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>RHDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
